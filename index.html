@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>Apnaa vehicle</title>
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <!-- custom css link -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="side-menu">
+      <ul>
+        <img src="./images/cross.png" alt="" id="menu-cross" />
+        <li><a href="#" onclick="removeMenu()">Home</a></li>
+        <li><a href="#About" onclick="removeMenu()">About</a></li>
+        <li><a href="#services" onclick="removeMenu()">Services</a></li>
+        <li><a href="#blogs" onclick="removeMenu()">Blogs</a></li>
+        <li><a href="#order" onclick="removeMenu()">Contact Us</a></li>
+      </ul>
+    </div>
     <!-- modal -->
 
     <div class="modal" id="modal">
-
-        <div class="container">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="image">
-                <img src="images/blog1.webp" alt="">
-            </div>
-            <div class="content">
-                <h2>Apnaa Vehicle</h2>
-                <p>Your Ultimate Destination for Buying, Selling, and Renting All Types of Vehicles</p>
-                <form action="">
-                    <input type="email" placeholder="Your Email Address" required>
-                    <button type="submit" class="btn">Subscribe</button>
-                </form>
-            </div>
+      <div class="container">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="image">
+          <img src="images/blog1.webp" alt="" />
         </div>
-
+        <div class="content">
+          <h2>Apnaa Vehicle</h2>
+          <p>
+            Your Ultimate Destination for Buying, Selling, and Renting All Types
+            of Vehicles
+          </p>
+          <form action="">
+            <input type="email" placeholder="Your Email Address" required />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- end -->
-    
+
     <!-- header section starts -->
 
     <!-- header section ends -->
@@ -41,44 +59,41 @@
     <!-- home section starts -->
     <!-- *done -->
     <section class="home" id="home">
-        
-        <div class="header-main">
+      <div class="header-main">
+        <div id="menu" class="fas fa-bars"></div>
 
-            <div id="menu" class="fas fa-bars"></div>
+        <a href="#" class="logo"> Apnaa Vehicle</a>
 
-            <a href="#" class="logo">  Apnaa Vehicle</a>
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#services">service</a>
+          <a href="#blogs">blogs</a>
+          <a href="#order">Contact Us</a>
+        </nav>
 
-            <nav class="navbar">
-                <a href="#home" >home</a>
-                <a href="#about" >about</a>
-                <a href="#products" >Vehicles</a>
-                <a href="#services" >service</a>
-                <a href="#blogs" >blogs</a>
-                <a href="#order" >Contact Us</a>
-            </nav>
-
-            <div class="icons">
-                <button class="action-btn">
-                    <a href="#" class="fas fa-user"></a>
-                </button>
-                <button class="action-btn">
-                    <a href="#" class="fas fa-heart"></a>
-                    <span class="count">0</span>
-                </button>
-                <button class="action-btn">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <span class="count">0</span>
-                </button>
-            </div>
-
+        <div class="icons">
+          <button class="action-btn">
+            <a href="#" class="fas fa-user"></a>
+          </button>
+          <button class="action-btn">
+            <a href="#" class="fas fa-heart"></a>
+            <span class="count">0</span>
+          </button>
+          <button class="action-btn">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <span class="count">0</span>
+          </button>
         </div>
-        <div class="content">
-            <h3>Apnaa Vehicle</h3>
-            <p>Your Ultimate Destination for Buying, Selling, and Renting All Types of Vehicles
-            </p>
-            <a href="#order" class="btn"> Contact Us</a>    
-        </div>
-
+      </div>
+      <div class="content">
+        <h3>Apnaa Vehicle</h3>
+        <p>
+          Your Ultimate Destination for Buying, Selling, and Renting All Types
+          of Vehicles
+        </p>
+        <a href="#order" class="btn"> Contact Us</a>
+      </div>
     </section>
 
     <!-- home section ends -->
@@ -86,262 +101,255 @@
     <!-- about section starts -->
     <!-- *donr -->
     <section class="about" id="about">
+      <h1 class="heading">about <span> us</span></h1>
 
-        <h1 class="heading">about <span> us</span></h1>
-
-        <div class="row">
-
-            <div class="image">
-                <img src="./images/women-buying-car.avif" alt="">
-            </div>
-
-            <div class="content">
-                <h3>Universal Platform</h3>
-                <img src="images/quote.svg" alt="" class="quote">
-                <p>At Apnaa Vehicle, we understand that the automotive market is vast and diverse. 
-                    That's why we've created a platform that brings together all types of vehicles—whether you're looking for
-                     economic cars, luxury sedans, commercial trucks, used cars, or two-wheelers, we've got you covered.
-                </p>
-                <a href="#" class="btn"> read more</a>    
-            </div>
-
+      <div class="row">
+        <div class="image">
+          <img src="./images/women-buying-car.avif" alt="" />
         </div>
 
+        <div class="content">
+          <h3>Universal Platform</h3>
+          <img src="images/quote.svg" alt="" class="quote" />
+          <p>
+            At Apnaa Vehicle, we understand that the automotive market is vast
+            and diverse. That's why we've created a platform that brings
+            together all types of vehicles—whether you're looking for economic
+            cars, luxury sedans, commercial trucks, used cars, or two-wheelers,
+            we've got you covered.
+          </p>
+          <a href="#" class="btn"> read more</a>
+        </div>
+      </div>
     </section>
 
     <!-- about section ends -->
 
     <!-- exclusive section starts -->
-    <!-- *pending -->
-    <section class="exclusive">
-
-        <h1 class="heading">What <span>We Provide</span></h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>Car</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/Car.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="images/carssssss.jpg" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="images/Honda.avif" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsum laborum incidunt dolores, quam exercitationem praesentium omnis modi delectus id assumenda perferendis unde minima at aliquam adipisci aperiam eligendi porro.
-                </p>
+    <!-- *done -->
+    <section class="exclusive main">
+      <h1 class="heading">What <span>We Provide</span></h1>
+      <div class="container slider">
+        <div class="box-container list">
+          <div class="box item">
+            <div class="image">
+              <img src="images/Car.jpg" alt="" />
             </div>
-            <div class="box">
-                <h3>Bike</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/bike.avif" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="images/bike1.jpeg" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="images/bike2.jpeg" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam reiciendis voluptatem. Et aliquam blanditiis numquam accusamus, animi nesciunt voluptate, rerum possimus, officia vitae omnis recusandae distinctio alias fuga nostrum.
-                </p>
+            <div class="overlay">
+              <h3>Car</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                ipsam reiciendis voluptatem. Et aliquam blanditiis numquam
+                accusamus, animi nesciunt voluptate, rerum possimus, officia
+                vitae omnis recusandae distinctio alias fuga nostrum.
+              </p>
             </div>
-            <div class="box">
-                <h3>Bus</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/bus" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="images/bus 1.avif" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="images/busssss.webp" alt="image">
-                    </div>
-                </div>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="./images/bike.avif" alt="" />
+              <div class="overlay">
+                <h3>Bikes</h3>
                 <p class="vehicle_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam reiciendis voluptatem. Et aliquam blanditiis numquam accusamus, animi nesciunt voluptate, rerum possimus, officia vitae omnis recusandae distinctio alias fuga nostrum.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                  ipsum laborum incidunt dolores, quam exercitationem
+                  praesentium omnis modi delectus id assumenda perferendis unde
+                  minima at aliquam adipisci aperiam eligendi porro.
                 </p>
+              </div>
             </div>
-            <div class="box">
-                <h3>Truck</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/truck.webp" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam reiciendis voluptatem. Et aliquam blanditiis numquam accusamus, animi nesciunt voluptate, rerum possimus, officia vitae omnis recusandae distinctio alias fuga nostrum.
-                </p>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="images/bus" alt="" />
             </div>
-            <div class="box">
-                <h3>Three wheelers</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/Car.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam reiciendis voluptatem. Et aliquam blanditiis numquam accusamus, animi nesciunt voluptate, rerum possimus, officia vitae omnis recusandae distinctio alias fuga nostrum.
-                </p>
+            <div class="overlay">
+              <h3>Bus</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                ipsam reiciendis voluptatem. Et aliquam blanditiis numquam
+                accusamus, animi nesciunt voluptate, rerum possimus, officia
+                vitae omnis recusandae distinctio alias fuga nostrum.
+              </p>
             </div>
-            <div class="box">
-                <h3>Cycles</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/Car.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam reiciendis voluptatem. Et aliquam blanditiis numquam accusamus, animi nesciunt voluptate, rerum possimus, officia vitae omnis recusandae distinctio alias fuga nostrum.
-                </p>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="images/truck.webp" alt="" />
             </div>
-            <div class="box">
-                <h3>Car</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/Car.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsum laborum incidunt dolores, quam exercitationem praesentium omnis modi delectus id assumenda perferendis unde minima at aliquam adipisci aperiam eligendi porro.
-                </p>
+            <div class="overlay">
+              <h3>truck</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                ipsam reiciendis voluptatem. Et aliquam blanditiis numquam
+                accusamus, animi nesciunt voluptate, rerum possimus, officia
+                vitae omnis recusandae distinctio alias fuga nostrum.
+              </p>
             </div>
-            <div class="box">
-                <h3>Bike</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/Car.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam reiciendis voluptatem. Et aliquam blanditiis numquam accusamus, animi nesciunt voluptate, rerum possimus, officia vitae omnis recusandae distinctio alias fuga nostrum.
-                </p>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="images/Car.jpg" alt="" />
             </div>
-            <div class="box">
-                <h3>Bus</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/Car.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam reiciendis voluptatem. Et aliquam blanditiis numquam accusamus, animi nesciunt voluptate, rerum possimus, officia vitae omnis recusandae distinctio alias fuga nostrum.
-                </p>
+            <div class="overlay">
+              <h3>Three wheelers</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                ipsam reiciendis voluptatem. Et aliquam blanditiis numquam
+                accusamus, animi nesciunt voluptate, rerum possimus, officia
+                vitae omnis recusandae distinctio alias fuga nostrum.
+              </p>
             </div>
-            <div class="box">
-                <h3>Truck</h3>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/Car.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-                    </div>
-                </div>
-                <p class="vehicle_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam reiciendis voluptatem. Et aliquam blanditiis numquam accusamus, animi nesciunt voluptate, rerum possimus, officia vitae omnis recusandae distinctio alias fuga nostrum.
-                </p>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="./images/cycle1.jpeg" alt="" />
             </div>
-
+            <div class="overlay">
+              <h3>Cycles</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                ipsam reiciendis voluptatem. Et aliquam blanditiis numquam
+                accusamus, animi nesciunt voluptate, rerum possimus, officia
+                vitae omnis recusandae distinctio alias fuga nostrum.
+              </p>
+            </div>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="images/Car.jpg" alt="" />
+            </div>
+            <div class="overlay">
+              <h3>Car</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                ipsum laborum incidunt dolores, quam exercitationem praesentium
+                omnis modi delectus id assumenda perferendis unde minima at
+                aliquam adipisci aperiam eligendi porro.
+              </p>
+            </div>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="images/bike.avif" alt="" />
+            </div>
+            <div class="overlay">
+              <h3>Bikes</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                ipsum laborum incidunt dolores, quam exercitationem praesentium
+                omnis modi delectus id assumenda perferendis unde minima at
+                aliquam adipisci aperiam eligendi porro.
+              </p>
+            </div>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="images/bus" alt="" />
+            </div>
+            <div class="overlay">
+              <h3>Bus</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                ipsum laborum incidunt dolores, quam exercitationem praesentium
+                omnis modi delectus id assumenda perferendis unde minima at
+                aliquam adipisci aperiam eligendi porro.
+              </p>
+            </div>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="images/truck.webp" alt="" />
+            </div>
+            <div class="overlay">
+              <h3>Truck</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                ipsum laborum incidunt dolores, quam exercitationem praesentium
+                omnis modi delectus id assumenda perferendis unde minima at
+                aliquam adipisci aperiam eligendi porro.
+              </p>
+            </div>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="images/Car.jpg" alt="" />
+            </div>
+            <div class="overlay">
+              <h3>Three wheelers</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                ipsum laborum incidunt dolores, quam exercitationem praesentium
+                omnis modi delectus id assumenda perferendis unde minima at
+                aliquam adipisci aperiam eligendi porro.
+              </p>
+            </div>
+          </div>
+          <div class="box item">
+            <div class="image">
+              <img src="./images/cycle1.jpeg" alt="" />
+            </div>
+            <div class="overlay">
+              <h3>Cycles</h3>
+              <p class="vehicle_discription">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                ipsum laborum incidunt dolores, quam exercitationem praesentium
+                omnis modi delectus id assumenda perferendis unde minima at
+                aliquam adipisci aperiam eligendi porro.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
     <!-- exclusive section ends -->
-
-    <!-- product section starts -->
-    
-
-    <!-- product section ends -->
 
     <!-- services section starts -->
     <!-- *done -->
     <section class="services" id="services">
+      <h1 class="heading">our <span>services</span></h1>
 
-        <h1 class="heading">our <span>services</span></h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fas fa-ship"></i>
-                <h3>Special Financing Offers</h3>
-                <p>Our stress-free finance department that can
-                    find financial solutions to save you money.</p>
-                <a href="#" class="btn"> learn more</a>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-phone"></i>
-                <h3>Trusted Car Dealership</h3>
-                <p>Our stress-free finance department that can
-                    find financial solutions to save you money.</p>
-                <a href="#" class="btn"> learn more</a>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-reply-all"></i>
-                <h3>Transparent Pricing</h3>
-                <p>Our stress-free finance department that can
-                    find financial solutions to save you money.</p>
-                <a href="#" class="btn"> learn more</a>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-money-check"></i>
-                <h3>Expert Car Service</h3>
-                <p>Our stress-free finance department that can
-                    find financial solutions to save you money.</p>
-                <a href="#" class="btn"> learn more</a>
-            </div>
-
-            
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-ship"></i>
+          <h3>Special Financing Offers</h3>
+          <p>
+            Our stress-free finance department that can find financial solutions
+            to save you money.
+          </p>
+          <a href="#" class="btn"> learn more</a>
         </div>
 
+        <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>Trusted Car Dealership</h3>
+          <p>
+            Our stress-free finance department that can find financial solutions
+            to save you money.
+          </p>
+          <a href="#" class="btn"> learn more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-reply-all"></i>
+          <h3>Transparent Pricing</h3>
+          <p>
+            Our stress-free finance department that can find financial solutions
+            to save you money.
+          </p>
+          <a href="#" class="btn"> learn more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-money-check"></i>
+          <h3>Expert Car Service</h3>
+          <p>
+            Our stress-free finance department that can find financial solutions
+            to save you money.
+          </p>
+          <a href="#" class="btn"> learn more</a>
+        </div>
+      </div>
     </section>
 
     <!-- services section ends -->
@@ -349,30 +357,39 @@
     <!-- offer section starts -->
 
     <section class="offer">
+      <div class="row">
+        <div class="images">
+          <div class="image">
+            <img src="images/busssss.webp" alt="" height="358" />
+          </div>
 
-        <div class="row">
-
-            <div class="images">
-                <div class="image">
-                    <img src="images/busssss.webp" alt="" height="358">
-                </div>
-    
-                <div class="image">
-                    <img src="images/carssssss.jpg" alt="" height="445">
-                </div>
-            </div>
-
-            <div class="content">
-                
-                <h3>Our Mission</h3>
-                <div class="divider"></div>
-                <p>At Apnaa Vehicle, our mission is to revolutionize the automotive market by offering an extensive selection of vehicles to meet every need and preference. We are committed to providing unmatched variety, bringing together an unparalleled assortment of vehicles all under one roof, from economic cars to luxury sedans, commercial trucks to two-wheelers. We ensure competitive pricing by leveraging our expansive network and strategic partnerships, making top-quality vehicles accessible to everyone. Our dedicated team of experts is devoted to delivering exceptional support and superior service, guiding you through a smooth and hassle-free buying, selling, and renting experience. With Apnaa Vehicle, you can trust that you are receiving comprehensive, reliable, and customer-focused services that set us apart in the automotive industry.</p>
-                
-                <a href="#" class="btn"> Coming soon</a>
-            </div>
-
+          <div class="image">
+            <img src="images/carssssss.jpg" alt="" height="445" />
+          </div>
         </div>
 
+        <div class="content">
+          <h3>Our Mission</h3>
+          <div class="divider"></div>
+          <p>
+            At Apnaa Vehicle, our mission is to revolutionize the automotive
+            market by offering an extensive selection of vehicles to meet every
+            need and preference. We are committed to providing unmatched
+            variety, bringing together an unparalleled assortment of vehicles
+            all under one roof, from economic cars to luxury sedans, commercial
+            trucks to two-wheelers. We ensure competitive pricing by leveraging
+            our expansive network and strategic partnerships, making top-quality
+            vehicles accessible to everyone. Our dedicated team of experts is
+            devoted to delivering exceptional support and superior service,
+            guiding you through a smooth and hassle-free buying, selling, and
+            renting experience. With Apnaa Vehicle, you can trust that you are
+            receiving comprehensive, reliable, and customer-focused services
+            that set us apart in the automotive industry.
+          </p>
+
+          <a href="#" class="btn"> Coming soon</a>
+        </div>
+      </div>
     </section>
 
     <!-- offer section ends -->
@@ -380,55 +397,51 @@
     <!-- blogs section starts -->
 
     <section class="blogs" id="blogs">
+      <h1 class="heading">our <span> blogs</span></h1>
 
-        <h1 class="heading">our <span> blogs</span></h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/bus 1.avif" alt="">
-                </div>
-                <div class="content">
-                    <a href="#" class="link"> Bus</a>
-                    <p>Coming soon!</p>
-                    <div class="icon">
-                        <a href="#"><i class="fas fa-clock"></i> 25th Jan, 2024</a>
-                        <a href="#"><i class="fas fa-user"></i> by admin</a>
-                    </div>
-                </div>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/bus 1.avif" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="link"> Bus</a>
+            <p>Coming soon!</p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 25th Jan, 2024</a>
+              <a href="#"><i class="fas fa-user"></i> by admin</a>
             </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/scooty.avif" alt="">
-                </div>
-                <div class="content">
-                    <a href="#" class="link"> Scooty</a>
-                    <p>Coming soon!</p>
-                    <div class="icon">
-                        <a href="#"><i class="fas fa-clock"></i> 25th Jan, 2024</a>
-                        <a href="#"><i class="fas fa-user"></i> by admin</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/Honda.avif" alt="">
-                </div>
-                <div class="content">
-                    <a href="#" class="link"> Bike</a>
-                    <p>Coming soon!</p>
-                    <div class="icon">
-                        <a href="#"><i class="fas fa-clock"></i> 25th Jan, 2024</a>
-                        <a href="#"><i class="fas fa-user"></i> by admin</a>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
 
+        <div class="box">
+          <div class="image">
+            <img src="images/scooty.avif" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="link"> Scooty</a>
+            <p>Coming soon!</p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 25th Jan, 2024</a>
+              <a href="#"><i class="fas fa-user"></i> by admin</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/Honda.avif" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="link"> Bike</a>
+            <p>Coming soon!</p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 25th Jan, 2024</a>
+              <a href="#"><i class="fas fa-user"></i> by admin</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- blogs section ends -->
@@ -436,55 +449,97 @@
     <!-- order section starts -->
 
     <section class="order" id="order">
+      <h1 class="heading">Contact <span>Us</span></h1>
 
-        <h1 class="heading">Contact <span>Us</span></h1>
+      <form id="contact-form">
+        <div class="inputBox">
+          <div class="input">
+            <span>Full Name:</span>
+            <input
+              type="text"
+              placeholder="Your Full Name"
+              name="full-name"
+              required
+            />
+          </div>
+          <div class="input">
+            <span>Phone Number:</span>
+            <input
+              type="number"
+              placeholder="Your Phone Number"
+              name="phone-number"
+              required
+            />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>Email:</span>
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              name="email"
+              required
+            />
+          </div>
+          <div class="input">
+            <span>Choose Vehicle:</span>
+            <select name="vehicle-type" id="item" required>
+              <option value="" disabled selected>Select Vehicle</option>
+              <option value="2-Wheelers">2-Wheelers</option>
+              <option value="3-Wheelers">3-Wheelers</option>
+              <option value="4-Wheelers">4-Wheelers</option>
+              <option value="more">More</option>
+            </select>
+          </div>
+        </div>
+         <div class="input">
+            <span>Choose State:</span>
+            <select name="vehicle-type" id="item" required>
+              <option value="" disabled selected>Select State</option>
+              <option value="2-Wheelers">Delhi</option>
+              <option value="3-Wheelers">Chandigarh</option>
+              <option value="4-Wheelers">Assam</option>
+              <option value="more">Bihar</option>
+              <option value="2-Wheelers">Haryana</option>
+              <option value="3-Wheelers">Himachal Pradesh</option>
+              <option value="4-Wheelers">Jharkhand</option>
+              <option value="more">Karnataka</option>
+              <option value="2-Wheelers">Kerela</option>
+              <option value="3-Wheelers">Madhya Pradesh</option>
+              <option value="4-Wheelers">Maharashtra</option>
+              <option value="more">Manipur</option>
+              <option value="2-Wheelers">Meghalaya</option>
+              <option value="3-Wheelers">Mizoram</option>
+              <option value="4-Wheelers">Nagaland</option>
+              <option value="more">Odisha</option>
+              <option value="2-Wheelers">Punjab</option>
+              <option value="3-Wheelers">Rajasthan</option>
+              <option value="4-Wheelers">Sikkim</option>
+              <option value="more">Tamil Nadu</option>
+              <option value="2-Wheelers">Telangana</option>
+              <option value="3-Wheelers">Tripura</option>
+              <option value="4-Wheelers">Uttarakhand</option>
+              <option value="more">Uttar Pradesh</option>
+              <option value="2-Wheelers">Andhra Pradesh</option>
+              <option value="3-Wheelers">Arunachal Pradesh</option>
 
-        <form action="">
-
-            <div class="inputBox">
-                <div class="input">
-                    <span>Full Name:</span>
-                    <input type="text" placeholder="Your Full Name">
-                </div>
-                <div class="input">
-                    <span>phone number:</span>
-                    <input type="number" placeholder="Your phone number">
-                </div>
-            </div>
-
-            <div class="inputBox">
-                <div class="input">
-                    <span>Email:</span>
-                    <input type="email" placeholder="Your Email Address">
-                </div>
-                <div class="input">
-                    <span>Choose Vehicle</span>
-                    <select name="item" id="item">
-                        <option value="" disabled selected> Select Vehicle</option>
-                        <option value="Car">2-Wheelers</option>
-                        <option value="Bike">3-Wheelers</option>
-                        <option value="Auto">4-wheelers</option>
-                        <option value="Auto">more</option>
-                        
-                    </select>
-                </div>
-            </div>
-
-            <div class="inputBox">
-                <div class="input">
-                    <span>Message</span>
-                    <input type="Place" placeholder="Enter your Message">
-                </div>
-                
-
-            
-                
-            </div>
-
-            <input type="submit" value="Send your message" class="btn">
-
-        </form>
-
+            </select>
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>Message:</span>
+            <input
+              type="text"
+              placeholder="Enter your Message"
+              name="message"
+              required
+            />
+          </div>
+        </div>
+        <input type="submit" value="Send your message" class="btn" />
+      </form>
     </section>
 
     <!-- order section ends -->
@@ -492,79 +547,52 @@
     <!-- footer section starts -->
 
     <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#"><i class="fas fa-phone"></i> +91-85059 57042</a>
-                <a href="#"><i class="fas fa-phone"></i> +91-76699 02882</a>
-                <a href="#"><i class="fas fa-envelope"></i> apnavehicle0104@gmail.com</a>
-            </div>
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#"><i class="fas fa-arrow-right"></i> Home</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> services</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Vehicles</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Contact Us</a>
-            </div>
-
-            <div class="box">
-                <h3>extra links</h3>
-                <a href="#"><i class="fas fa-arrow-right"></i> Home</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> About</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Features</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> categories</a>
-            </div>
-
-            <div class="box">
-                <h3>newsletter</h3>
-                <input type="email" placeholder="Your Email Address" class="email">
-                <input type="submit" value="subscribe" class="btn">
-            </div>
-
+      <div class="box-container">
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"><i class="fas fa-phone"></i> +91-85059 57042</a>
+          <a href="#"><i class="fas fa-phone"></i> +91-76699 02882</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> apnavehicle0104@gmail.com</a
+          >
         </div>
 
-        <div class="credit">
-            <img src="images/payment.png" alt="" class="payment-img">
-            <p>created by <span>ApnaaVehicle</span> | all rights reserved!</p>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"><i class="fas fa-arrow-right"></i> Home</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> services</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> Vehicles</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> Contact Us</a>
         </div>
 
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#"><i class="fas fa-arrow-right"></i> Home</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> About</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> Features</a>
+          <a href="#"><i class="fas fa-arrow-right"></i> categories</a>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <input type="email" placeholder="Your Email Address" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+        </div>
+      </div>
+
+      <div class="credit">
+        <img src="images/payment.png" alt="" class="payment-img" />
+        <p>created by <span>ApnaaVehicle</span> | all rights reserved!</p>
+      </div>
     </section>
 
     <!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
