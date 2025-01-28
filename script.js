@@ -119,3 +119,81 @@ document
       alert("An error occurred.");
     }
   });
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.slider');
+    const list = slider.querySelector('.list');
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let animationID = 0;
+    let currentX = 0;
+
+    // Touch events
+    list.addEventListener('touchstart', touchStart);
+    list.addEventListener('touchmove', touchMove);
+    list.addEventListener('touchend', touchEnd);
+
+    // Mouse events
+    list.addEventListener('mousedown', touchStart);
+    list.addEventListener('mousemove', touchMove);
+    list.addEventListener('mouseup', touchEnd);
+    list.addEventListener('mouseleave', touchEnd);
+
+    // Prevent context menu
+    window.oncontextmenu = function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    };
+
+    function getPositionX(event) {
+        return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    }
+
+    function touchStart(event) {
+        startPos = getPositionX(event);
+        isDragging = true;
+        animationID = requestAnimationFrame(animation);
+        slider.classList.add('dragging');
+    }
+
+    function touchMove(event) {
+        if (isDragging) {
+            const currentPosition = getPositionX(event);
+            currentTranslate = prevTranslate + currentPosition - startPos;
+        }
+    }
+
+    function touchEnd() {
+        isDragging = false;
+        cancelAnimationFrame(animationID);
+        slider.classList.remove('dragging');
+        
+        const moveBy = currentTranslate - prevTranslate;
+        prevTranslate = currentTranslate;
+
+        // Add bounce back effect if dragged too far
+        const maxTranslate = 0;
+        const minTranslate = -slider.offsetWidth;
+
+        if (currentTranslate > maxTranslate) {
+            currentTranslate = maxTranslate;
+            prevTranslate = maxTranslate;
+        } else if (currentTranslate < minTranslate) {
+            currentTranslate = minTranslate;
+            prevTranslate = minTranslate;
+        }
+
+        setSliderPosition();
+    }
+
+    function animation() {
+        setSliderPosition();
+        if (isDragging) requestAnimationFrame(animation);
+    }
+
+    function setSliderPosition() {
+        list.style.transform = `translateX(${currentTranslate}px)`;
+    }
+});
