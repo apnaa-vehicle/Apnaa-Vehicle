@@ -19,6 +19,9 @@ main {
   min-width: calc(var(--width) * var(--quantity));
   position: relative;
 }
+.slider.dragging .list {
+  transition: none;
+}
 .slider .list .item {
   width: var(--width);
   height: var(--height);
