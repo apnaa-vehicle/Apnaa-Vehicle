@@ -69,3 +69,16 @@ main {
 .slider .item:hover {
   filter: red(0);
 }
+@media (max-width: 768px) {
+  :root {
+      --width: clamp(200px, 60vw, 300px);
+      --height: clamp(150px, 40vh, 400px);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+      --width: clamp(150px, 80vw, 250px);
+      --height: clamp(120px, 30vh, 300px);
+  }
+}
